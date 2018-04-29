@@ -15,7 +15,7 @@ before_install:
 language: python
 python:
     - "2.7"
-script: python 'polar illustration.py'
+script: python 'main.py'
 notification:
     slack:
         on_success: never
