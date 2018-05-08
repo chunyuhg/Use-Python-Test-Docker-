@@ -1771,7 +1771,7 @@ def open_website(reg,max_v,min_v):
     HTML +='''
     
     </g>
-    </svg>
+    </svg>   
     </xml>
     '''
     import webbrowser

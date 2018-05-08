@@ -48,19 +48,21 @@ def color(value,_min,_max):
    
 
 
-if form.getvalue('x1'):
-        browser=0
-        #x1v=form.getvalue('x1');
-
-else:
+#==============================================================================
+# if form.getvalue('x1'):
+#         browser=0
+#         #x1v=form.getvalue('x1');
+# 
+# else:
+#==============================================================================
     #p1=[0.81,0.85,0.96,2.,1.13,1.41,1.21,1.29,1.,1.36,1.57,1.77,1.79,1.88,1.46,1.78,1.46]
     
-    p1=[round(random.uniform(0,2),2) for _ in range (17)]
-    for r in range(17):
-        reg[r]=color(p1[r],min(p1),max(p1))
+p1=[round(random.uniform(0,2),2) for _ in range (17)]
+for r in range(17):
+    reg[r]=color(p1[r],min(p1),max(p1))
 
 
-if browser:    
+if browser:
     svg.open_website(reg,round(max(p1),2),round(min(p1),2));
    
     
